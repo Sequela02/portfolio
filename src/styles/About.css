@@ -1,0 +1,118 @@
+/* Estilos para la sección de "About" */
+.about {
+  padding: 4rem 2rem;
+  background-color: #1A1A1A;
+  color: #E5E5E5;
+  position: relative;
+  overflow: hidden;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px), 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 200px 200px, 100% 100%, 100% 100%;
+  background-blend-mode: overlay;
+}
+
+/* Título */
+.about h2 {
+  font-family: 'VT323', monospace;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #E5E5E5;
+  font-size: 2.5rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/* Contenido de la sección About */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Marco de "MISSING PERSON" */
+.missing-frame {
+  position: relative;
+  width: 180px;
+  height: 260px;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: #F5F5DC;
+  border: 3px solid #333;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 0 10px rgba(0, 0, 0, 0.15);
+  transform: rotate(-1.5deg);
+  filter: contrast(0.9);
+  border-radius: 4px;
+  background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0.1) 2px, transparent 2px),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.05) 75%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.05) 75%);
+  background-size: 10px 10px, 15px 15px, 15px 15px;
+  background-blend-mode: multiply;
+}
+
+/* Imagen con estilo envejecido */
+.about-image {
+  width: 100%;
+  border-radius: 3px;
+  filter: grayscale(100%) contrast(1.2) brightness(0.85);
+  opacity: 0.95;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+/* Texto de "MISSING PERSON" */
+.missing-text {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Special Elite', monospace;
+  background-color: #333;
+  color: #F5F5DC;
+  padding: 3px 12px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+/* Nombre en la tarjeta */
+.name-text {
+  font-family: 'VT323', monospace;
+  color: #333;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Texto descriptivo */
+.about-text {
+  font-family: 'Spectral', serif;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  color: #E5E5E5;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
